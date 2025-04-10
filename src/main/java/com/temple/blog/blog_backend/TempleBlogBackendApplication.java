@@ -8,6 +8,7 @@ public class TempleBlogBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TempleBlogBackendApplication.class, args);
+		System.out.println("Temple Blog Backend Application is running!");
 	}
 
 }
