@@ -2,6 +2,8 @@ package org.team.templeblog.api.model;
 
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -41,9 +43,14 @@ public class User {
     @Column(nullable = false, unique = true, length = 100)
     private String email;
 
-    // Password is mandatory (in real projects it is stored in encrypted form)
-    @Column(nullable = false)
+    // password is mandatory
+    @Column(nullable = false, length = 100)
+    @JsonIgnore
     private String password;
+
+    public String getMaskedPassword() {
+        return password != null ? "****" : null;
+    }
 
     // User role (for example, ADMIN, USER)
     @Column(nullable = false)
