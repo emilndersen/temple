@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Cacheable
 public class UserTokenLogoutRequest extends UserBaseLoginRequest {
 
     private String token;
