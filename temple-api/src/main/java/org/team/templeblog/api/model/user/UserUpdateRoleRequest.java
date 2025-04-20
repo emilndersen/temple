@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class UserUpdateRoleRequest implements Serializable {
 
     private Long userId;

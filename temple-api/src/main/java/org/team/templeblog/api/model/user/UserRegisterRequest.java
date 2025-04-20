@@ -7,10 +7,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * UserRegisterRequest model
+ * Represents a request for user registration with username, email, password, and confirm password.
+ */
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class UserRegisterRequest implements Serializable {
 
     private String username;

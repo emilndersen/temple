@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class UserUpdateInfoRequest implements Serializable {
 
     private String email;

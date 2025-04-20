@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class UserUpdatePwdRequest implements Serializable {
 
     private String oldPassword;

@@ -24,6 +24,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "users") // Table name in the database
+// The @Table annotation specifies the name of the table in the database
+@Cacheable // Enable caching for this entity
+// The @Cacheable annotation indicates that this entity can be cached
+// to improve performance and reduce database load
 public class User {
 
     // Primary key of the table

@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class UserOptLogPageRequest implements Serializable {
 
     private String type;
