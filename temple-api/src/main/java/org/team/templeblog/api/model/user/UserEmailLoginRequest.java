@@ -6,6 +6,7 @@ import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import jakarta.persistence.Cacheable;
 import lombok.NoArgsConstructor;
 // Removed unnecessary import as UserBaseLoginRequest is in the same package
 

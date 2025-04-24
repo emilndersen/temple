@@ -3,11 +3,11 @@ package org.team.templeblog.api.model.UserAdminPageRequest;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Cacheable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 
 /**
  * UserAdminPageRequest model

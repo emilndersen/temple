@@ -1,4 +1,5 @@
-package org.team.templeblog.api.model;
+package org.team.templeblog.api.model.content;
+
 
 import jakarta.persistence.*;
 import lombok.*;

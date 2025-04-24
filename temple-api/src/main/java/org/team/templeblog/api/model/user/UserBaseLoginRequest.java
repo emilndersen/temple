@@ -3,6 +3,7 @@ package org.team.templeblog.api.model.user ;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Cacheable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

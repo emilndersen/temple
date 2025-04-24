@@ -1,4 +1,5 @@
-package org.team.templeblog.api.model;
+package org.team.templeblog.api.model.content;
+
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -35,3 +36,4 @@ public class Post {
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Comment> comments;
 }
+ 
